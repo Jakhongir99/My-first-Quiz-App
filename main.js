@@ -36,13 +36,13 @@ function selectOnlyThis(id){
 
  	 if ( key === `${questions[questionStart-1].a}` && ( !answers.includes(`${questions[questionStart-1].a}` )) ) {
   			answers.push(key);
-  			//console.log(answers,answers.length,answers.includes(`${questions[questionStart-1].a}`));
+  			console.log(answers,answers.length,answers.includes(`${questions[questionStart-1].a}`));
 	 }
   	 else if ( key !== `${questions[questionStart-1].a}` && ( answers.includes(`${questions[questionStart-1].a}` )) ) {
   	 		
   			answers.pop();
 
-  			//console.log(answers,answers.length,answers.includes(`${questions[questionStart-1].a}`));
+  			console.log(answers,answers.length,answers.includes(`${questions[questionStart-1].a}`));
 	 }
 	
 }
